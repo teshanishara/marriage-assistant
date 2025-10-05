@@ -1,0 +1,42 @@
+{
+  "pre_block_regexes": [
+    "(sexual content involving (child|minor|under 18|underage))",
+    "(how to have sex|explicit instructions for sex|step by step sexual act)"
+  ],
+  "red_flag_regexes": [
+    {
+      "id": "suicide",
+      "pattern": "\\b(kill myself|suicide|want to die|ending my life|i will die)\\b",
+      "severity": 10
+    },
+    {
+      "id": "underage",
+      "pattern": "\\b(i am 16|i'm 16|i am 17|i'm 17|under 18|underage)\\b",
+      "severity": 9
+    },
+    {
+      "id": "abuse",
+      "pattern": "\\b(my partner hits me|my (husband|wife|partner) (beat|beating|hit|hits)|being raped|sexually abused)\\b",
+      "severity": 10
+    },
+    {
+      "id": "pregnancy_complication",
+      "pattern": "\\b(bleeding during pregnancy|severe abdominal pain pregnancy|pregnancy bleeding)\\b",
+      "severity": 9
+    },
+    {
+      "id": "sti_symptom",
+      "pattern": "\\b(painful urination|unusual discharge|sores|bumps in genital|fever after sex)\\b",
+      "severity": 8
+    }
+  ],
+  "escalation_texts": {
+    "suicide": "I\u2019m really sorry you\u2019re feeling this. If you are thinking about harming yourself, please contact local emergency services right now or a crisis hotline. Are you in immediate danger?",
+    "underage": "I can\u2019t assist minors. If you are under 18, please seek help from a trusted adult or local child protection services.",
+    "abuse": "I\u2019m sorry this is happening. Your safety is important. If you are in immediate danger call local emergency services. Would you like local crisis or support hotline numbers?",
+    "pregnancy_complication": "The symptoms you described could be serious during pregnancy. Please contact emergency medical services or your healthcare provider immediately.",
+    "sti_symptom": "These symptoms suggest you should seek medical evaluation soon. Consider going to a clinic for testing and treatment."
+  },
+  "generic_escalation": "That sounds serious. If you are in immediate danger, call local emergency services. Would you like me to provide local crisis resources and next steps?",
+  "refusal_text": "I can\u2019t provide explicit sexual instructions or sexual content involving minors. I can help with medical information, communication scripts, or referrals. Which of those would you like?"
+}
